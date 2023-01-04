@@ -5,11 +5,30 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+ val!:string;
+ desc!:string;
+ lista:any[] =[]
 
-  ngOnInit(): void {
+
+  guardar(vali:string ,descr:string){
+    this.val=vali;
+    this.desc=descr;
+
+    class Listado{
+      texto!:string;
+      descriptivo!:string;
+      constructor(text:string, des:string){
+        this.texto=text
+        this.descriptivo=des
+      }
+    }
+
+    var info= new Listado(this.val, this.desc)
+    this.lista.push(info)
+    console.log(info)
+
   }
 
 }

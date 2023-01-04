@@ -2,10 +2,15 @@
 
     <h1 class="text-center mb-4 h2">Operaciones</h1>
     <div class="mb-3 w-1/4 mx-auto">
-        <input type="text" placeholder="ingresa nombre tarea" class="mb-3">
-        <textarea></textarea>
+        <input type="text" placeholder="ingresa nombre tarea" #valor  class="mb-3">
+        <textarea name="" #descripcion 
+         cols="30" rows="10" placeholder="Ingresa descripcion"></textarea>
         <div class="text-center text-white ">
-            <button class="bg-sky-500 pl-4 pr-4 pt-2 pb-2 rounded">Guardar</button>
+            <button class="bg-sky-500 pl-4 pr-4 pt-2 pb-2 rounded" (click)="guardar(valor.value, descripcion.value)">Guardar</button>
         </div>
-        
+        <p>{{val}}</p>
+        <p>{{desc}}</p>
+        <p>{{lista}}</p>
     </div>
+    
+
