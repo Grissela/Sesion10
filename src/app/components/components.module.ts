@@ -6,10 +6,11 @@ import { PageModule } from './page/page.module';
 
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,

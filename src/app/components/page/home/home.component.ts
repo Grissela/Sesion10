@@ -27,7 +27,7 @@ export class HomeComponent {
 
     var info= new Listado(this.val, this.desc)
     this.lista.push(info)
-    console.log(info)
+    console.log(this.lista)
 
   }
 

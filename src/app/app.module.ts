@@ -6,10 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { HomeComponent } from './components/page/home/home.component';
+import { ListaComponent } from './components/page/lista/lista.component';
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent
+    AppComponent,
+    HomeComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

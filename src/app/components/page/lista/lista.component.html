@@ -1,0 +1,15 @@
+<div class="mt-5">
+  <div class="contenedor border-2 w-3/4 p-4">
+    <h1>Lista de tareas</h1>
+    <div class="rounded-lg border border-neutral-500 mt-5 mb-5 w-full h-full">
+      <ul class="pl-10 pb-5 list-disc" *ngFor="let information of listaList">
+        <li>
+          {{ information.texto }}
+          <ul class="list-none">
+            <li>{{ information.descriptivo }}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

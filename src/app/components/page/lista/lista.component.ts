@@ -7,8 +7,10 @@ import { Component, OnInit ,Input} from '@angular/core';
 })
 export class ListaComponent{
 
-  @Input() valor!:string;
-  @Input() descripcion!:string;
+  @Input () valList!:String;
+  @Input () descList!:String;
+  @Input () listaList:any[] =[]
+
 
 
 }
